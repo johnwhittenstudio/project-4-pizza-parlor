@@ -72,17 +72,28 @@
 
 - _Open a live version of the project in your browser by clicking on https://johnwhittenstudio.github.io/project-4/_
 
-
 ## Tests
 
 ```
 
 Describe: Customer()
 
-Test: "It should return a Customer object with four properties for name, phone number, and address"
+Test: "It should return a Customer object with three properties for name, phone number, and address"
 Code: const customerOne = new Customer("John", "1234567890", "123 Yum Yum Lane, Hungryville, Oregon 12345");
 Expected Output: Customer { name: "John", phone number: "1234567890", address: "123 Yum Yum Lane, Hungryville, Oregon 12345" }
+
 Test passed!
+
+
+
+Describe: Pizza()
+
+Test: "It should return a Pizza object with four properties for crust, size, sauce, and toppings"
+Code: customerPizza = new Pizza("Detroit Style", "Extra Large", "Pesto Basil", ["Marinara", "Roasted Garlic", "Feta", "Spinach"]);
+Expected Output: Pizza { pizzaCrust: "Detroit Style", pizzaSize: "Extra Large", pizzaSauce: "Pesto Basil", pizzaToppings: ["Marinara", "Roasted Garlic", "Feta", "Spinach"] }
+
+Test passed!
+
 
 
 
