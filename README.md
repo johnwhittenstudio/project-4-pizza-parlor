@@ -76,54 +76,13 @@
 ## Tests
 
 ```
-Describe: Pizza()
-
-Test: "It should return a Pizza object with two properties for toppings and size"
-Code: const myPizza = new Pizza(["anchovies", "pineapple"], "medium");
-Expected Output: Pizza { toppings: ["anchovies", "pineapple"], size: "medium" }
-Test passed!
-
 
 Describe: Customer()
 
-Test: "It should return a Customer object with three properties for name, phone number, and address"
+Test: "It should return a Customer object with four properties for name, phone number, and address"
 Code: const customerOne = new Customer("John", "1234567890", "123 Yum Yum Lane, Hungryville, Oregon 12345");
 Expected Output: Customer { name: "John", phone number: "1234567890", address: "123 Yum Yum Lane, Hungryville, Oregon 12345" }
 Test passed!
-
-
-Describe: Price()
-
-  Calculate Price:
-    • Pizza = $16 flate rate
-    • Size: small + $1; medium + $8; large + $16; extra large + $24
-    • Toppings: Mozarella + $2; Pepperoni + $2; Green Peppers + $2, Feta + $2, Sun Dried Tomatoes + $2, Roasted Garlic + $2
-
-let total = 16;
-  if (this.size === "extra large") {
-    total += 24;
-  } else if (this.size === "large") {
-    total += 16;
-  } else if (this.size === "medium") {
-    total += 8;
-  } else (this.size === "small") {
-    total += 0;
-  }
-
-  return total
-
-
-
-Test: "It should return a value calculated by adding the pizza size and the number of toppings"
-Code: let totalPrice = new Price
-
-
-
-Test: "It should return a value calculated by adding the pizza size and the number of toppings"
-Code: let totalPrice = new Price
-
-
-
 
 
 
