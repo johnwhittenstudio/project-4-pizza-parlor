@@ -85,7 +85,6 @@ Expected Output: Customer { name: "John", phone number: "1234567890", address: "
 Test passed!
 
 
-
 Describe: Pizza()
 
 Test: "It should return a Pizza object with four properties for crust, size, sauce, and toppings"
@@ -93,6 +92,33 @@ Code: customerPizza = new Pizza("Detroit Style", "Extra Large", "Pesto Basil", [
 Expected Output: Pizza { pizzaCrust: "Detroit Style", pizzaSize: "Extra Large", pizzaSauce: "Pesto Basil", pizzaToppings: ["Marinara", "Roasted Garlic", "Feta", "Spinach"] }
 
 Test passed!
+
+
+Describe: Price()
+
+  Calculate Price:
+    • Pizza = $16 flate rate
+    • Size: small + $1; medium + $8; large + $16; extra large + $24
+    • Toppings: Mozarella + $2; Pepperoni + $2; Green Peppers + $2, Feta + $2, Sun Dried Tomatoes + $2, Roasted Garlic + $2
+
+let total = 16;
+  if (this.size === "extra large") {
+    total += 24;
+  } else if (this.size === "large") {
+    total += 16;
+  } else if (this.size === "medium") {
+    total += 8;
+  } else (this.size === "small") {
+    total += 0;
+  }
+
+  return total
+
+
+
+Test: "It should return a value calculated by adding the pizza size and the number of toppings"
+Code: let totalPrice = new Price
+
 
 
 
