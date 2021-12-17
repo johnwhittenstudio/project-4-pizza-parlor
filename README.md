@@ -101,25 +101,24 @@ Describe: Price()
     • Size: small + $1; medium + $8; large + $16; extra large + $24
     • Toppings: Mozarella + $2; Pepperoni + $2; Green Peppers + $2, Feta + $2, Sun Dried Tomatoes + $2, Roasted Garlic + $2
 
-let total = 16;
+let total = 0;
   if (this.size === "extra large") {
-    total += 24;
+    total += 40;
   } else if (this.size === "large") {
-    total += 16;
+    total += 32;
   } else if (this.size === "medium") {
-    total += 8;
+    total += 24;
   } else (this.size === "small") {
-    total += 0;
+    total += 16;
   }
 
   return total
 
-
-
 Test: "It should return a value calculated by adding the pizza size and the number of toppings"
 Code: let totalPrice = new Price
+Expected Output: Pizza { crust: 'Detroit Style', size: 'Extra Large', sauce: 'Pesto Basil', toppings: [ 'Marinara', 'Roasted Garlic', 'Feta' ], total: 46
 
-
+Test passed!
 
 
 

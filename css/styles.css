@@ -1,0 +1,73 @@
+/* #show-contact{
+  display: none;
+} */
+
+.header1 {
+  padding-top: 30px;
+  background: white;
+  color: black;
+}
+
+h1 {
+  font-family: 'Trattatello';
+  font-size: 60px;
+}
+
+h4 {
+  padding-top: 15px;
+}
+
+#name-row{
+  text-align: center;
+  border: 2px solid black;
+}
+
+#typePersonal{
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+
+#typeBusiness{
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+
+#buttons{
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+.btn {
+  background-color:rgb(0, 132, 255);
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  border: none;
+  border-radius: 5px;
+}
+
+.checkboxes {
+  text-align:center;
+}
+
+.checkboxes input{
+  margin: 0px 0px 0px 0px;
+}
+
+.checkboxes label{
+  margin: 0px 20px 0px 3px;
+}
+
+.footer {
+  position: bottom;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-style: bold;
+}
