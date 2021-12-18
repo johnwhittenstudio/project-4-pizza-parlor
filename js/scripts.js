@@ -4,12 +4,9 @@ function Customer(firstName, lastName, phoneNumber) {
   this.firstName = firstName;
   this.lastName = lastName;
   this.phoneNumber = phoneNumber;
-  // this.address = address;
 }
 
-
 // Business Logic for Pizza ---------------------
-
 
 function Pizza(crust, size, sauce, toppings, total) {
   this.crust = crust;
@@ -22,7 +19,6 @@ function Pizza(crust, size, sauce, toppings, total) {
 Pizza.prototype.listToppings = function() {
   return this.toppings.join(", ");
 };
-
 
 Pizza.prototype.calculateTotal = function() {
   let total = 0.00;
@@ -40,33 +36,18 @@ Pizza.prototype.calculateTotal = function() {
   }
 
 this.total = total;
-
 }
-
-
-// function showContact(newCustomer)
-//   $("#show-contact").show();
-//   $(".first-name").html(customer.firstName);
-//   $("#last-name").html(customer.lastName);
-//   $(".phone-number").html(customer.phoneNumber);
-
-// const customer = new Customer
 
 
 function emptyForm(){
   $("input#first-name").val("");
   $("input#last-name").val("");
   $("input#phone-number").val("");
-  // $("input#new-address").val("");
-  // $("select#new-city").val("");
-  // $("select#new-state").val("");
-  // $("select#new-zip").val("");
   $("select#new-crust").val("");
   $("select#new-size").val("");
   $("select#new-sauce").val("");
   $("input[name=selected-topping]").prop("checked", false);
 }
-
 
 // UI Logic ------------------
 
@@ -89,11 +70,9 @@ $(document).ready(function(){
   let newPizza = new Pizza(selectedCrust, selectedSize, selectedSauce, selectedToppings);
   newPizza.calculateTotal()
 
-
   $(".first-name").html(newCustomer.firstName);
   $(".last-name").html(newCustomer.lastName);
   $(".phone-number").html(newCustomer.phoneNumber);
-
   $(".crust").html(newPizza.crust);
   $(".size").html(newPizza.size);
   $(".sauce").html(newPizza.sauce);
