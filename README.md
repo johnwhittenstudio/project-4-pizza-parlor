@@ -120,14 +120,11 @@ Expected Output: Pizza { crust: 'Detroit Style', size: 'Extra Large', sauce: 'Pe
 
 Test passed!
 
-
-
-
 ```
 
 ## Known Bugs
 
-- \_ \_
+- none
 
 ## License
 
