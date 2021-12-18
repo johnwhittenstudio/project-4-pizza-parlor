@@ -13,7 +13,7 @@
       <h1><strong>Michelob Angelo's Pizza Parlor</strong> ™</h1>
     </div>
     <br>
-    <h5>30 minute delivery to anywhere in the United States.</h5>
+    <h5>Pick up only.</h5>
     <br>
     <div class="row">
       <div class="col-md-6">
@@ -21,28 +21,28 @@
         <h4>Enter Your Info:</h4>
         <form id="new-contact">
           <div class="form-group">
-            <label for="new-first-name">First Name</label>
-            <input type="text"  class="form-control" id="new-first-name">
+            <label for="first-name">First Name</label>
+            <input type="text"  class="form-control" id="first-name">
           </div>
           <div class="form-group">
-            <label for="new-last-name">Last Name</label>
-            <input type="text"  class="form-control" id="new-last-name">
+            <label for="last-name">Last Name</label>
+            <input type="text"  class="form-control" id="last-name">
           </div>
           <div class="form-group">
-            <label for="new-phone-number">Phone Number</label>
-            <input type="text"  class="form-control" id="new-phone-number">
+            <label for="phone-number">Phone Number</label>
+            <input type="text"  class="form-control" id="phone-number">
           </div>
-          <div class="form-group">
+          <!-- <div class="form-group">
             <label for="new-address">Address:</label>
-            <input type="text" class="form-control" id="new-address">
-          </div>
+            <input type="text" class="form-control" id="address">
+          </div> -->
           <div class="form-group">
             <div class="row">
-              <div class="col-sm-6">
+              <!-- <div class="col-sm-6">
               <label for="city">City:</label>
                 <input type="text" class="form-control" id="city">
-              </div>
-              <div class="col-sm-6">
+              </div> -->
+              <!-- <div class="col-sm-6">
                 <label for="state" class="col-sm-2 control-label">State</label>
                   <select class="form-control" id="new-state" name="state">
                     <option value="">N/A</option>
@@ -99,11 +99,11 @@
                     <option value="WV">West Virginia</option>
                     <option value="WY">Wyoming</option>
                 </select>
-              </div>
-              <div class="col-sm-6">
+              </div> -->
+              <!-- <div class="col-sm-6">
                 <label for="new-zip">Zip:</label>
                   <input type="text" class="form-control" id="new-zip">
-                </div>
+                </div> -->
               <br>
               <br>
               <br>    
@@ -148,27 +148,27 @@
                 <div class="form-group" id="toppings">
                 <span>
                   <label for="selected-topping" class="checkbox-inline">
-                    <input type="checkbox" value="mozarella" name="selected-topping" checked>
+                    <input type="checkbox" value="Mozarella" name="selected-topping" checked>
                     Mozarella 
                   </label>
                   <label for="selected-topping" class="checkbox-inline">
-                    <input type="checkbox" value="pepperoni" name="selected-topping">
+                    <input type="checkbox" value="Pepperoni" name="selected-topping">
                     Pepperoni 
                   </label>  
                   <label for="selected-topping" class="checkbox-inline">
-                    <input type="checkbox" value="peppers" name="selected-topping">
+                    <input type="checkbox" value="Green Peppers" name="selected-topping">
                     Green Peppers 
                   </label>      
                   <label for="selected-topping" class="checkbox-inline">
-                    <input type="checkbox" value="feta" name="selected-topping">
+                    <input type="checkbox" value="Feta" name="selected-topping">
                     Feta 
                   </label>  
                   <label for="selected-topping" class="checkbox-inline">
-                    <input type="checkbox" value="tomatoes" name="selected-topping">
+                    <input type="checkbox" value="Sun Dried Tomatoes" name="selected-topping">
                     Sun Dried Tomatoes 
                   </label>  
                   <label for="selected-topping" class="checkbox-inline">
-                    <input type="checkbox" value="garlic" name="selected-topping">
+                    <input type="checkbox" value="Roasted Garlic" name="selected-topping">
                     Roasted Garlic 
                   </label>  
                 <span>
@@ -193,28 +193,24 @@
         <div id="show-contact">
           <div class="row" id="name-row">
             <br>
-            <p>CUSTOMER INFO:</p>
-            <p>Last Name: <strong><span class="last-name"></span></strong></p>
+            <p><strong>CUSTOMER INFO:</strong></p>
+            <p>Last Name: <strong><span id="last-name"></span></strong></p>
             <p>First Name: <strong><span class="first-name"></span></strong></p>
             <p>Phone Number: <strong><span class="phone-number"></span></strong></p>
             <hr>
-            <br>
-            <p>DELIVER TO:</p>
-            <p><strong><span class="address"></span></strong></p>
-            <p><strong><span class="city"></span>, <span class="state"></span> <span class="zip"></span></strong></p>
-            <hr>
-            <br>
             <p>TOTAL DUE:</p>
-            <p><strong><span class="total"></span></strong></p>
+            <h3>$<span class="total"></span>.00</h3>
           </div>
           <div class="row">
+            <br>
             <div class="col-sm-6">
-              <p id="typePersonal">Pizza</p>
-              <p>Crust: <span class="crust"></span></p>
-              <p>Size: <span class="size"></span></p>
-              <p>Sauce: <span class="sauce"></span></p>
-              <p>Toppings: <span class="toppings"></span></p>
-              <p>Total: <span class="total"></span></p>
+            <br>
+              <p id="typePersonal"><strong>Your Pizza Order</strong></p>
+              <p><strong>Crust:</strong> <span class="crust"></span></p>
+              <p><strong>Size:</strong> <span class="size"></span></p>
+              <p><strong>Sauce:</strong> <span class="sauce"></span></p>
+              <p><strong>Toppings:</strong> <span class="toppings"></span></p>
+              <p><strong>Total:</strong> $<span class="total"></span>.00</p>
             </div>  
 
 

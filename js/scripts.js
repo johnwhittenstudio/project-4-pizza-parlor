@@ -1,10 +1,11 @@
 // // Business Logic for Customer ---------------------
 
-// function Customer(fullName, phoneNumber, address) {
-//   this.fullName = fullName;
-//   this.phoneNumber = phoneNumber;
-//   this.address = address;
-// }
+function Customer(firstName, lastName, phoneNumber) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.phoneNumber = phoneNumber;
+  // this.address = address;
+}
 
 
 // Business Logic for Pizza ---------------------
@@ -43,10 +44,19 @@ this.total = total;
 }
 
 
+// function showContact(newCustomer)
+//   $("#show-contact").show();
+//   $(".first-name").html(customer.firstName);
+  // $("#last-name").html(customer.lastName);
+//   $(".phone-number").html(customer.phoneNumber);
+
+// const customer = new Customer
+
+
 function emptyForm(){
-  // $("input#new-first-name").val("");
-  // $("input#new-last-name").val("");
-  // $("input#new-phone-number").val("");
+  // $("input#first-name").val("");
+  // $("input#last-name").val("");
+  // $("input#phone-number").val("");
   // $("input#new-address").val("");
   // $("select#new-city").val("");
   // $("select#new-state").val("");
@@ -64,7 +74,11 @@ $(document).ready(function(){
 
   $("form#new-contact").submit(function(event){
     event.preventDefault();
-  
+
+  // const inputtedFirstName = $("input#first-name").val();
+  // const inputtedLastName = $("input#last-name").val();
+  // const selectedCrust = $("select#new-crust").val();
+
   const selectedCrust = $("select#new-crust").val();
   const selectedSize = $("select#new-size").val();
   const selectedSauce = $("select#new-sauce").val();
@@ -73,6 +87,10 @@ $(document).ready(function(){
   }).get()
   let newPizza = new Pizza(selectedCrust, selectedSize, selectedSauce, selectedToppings);
   newPizza.calculateTotal()
+
+  // $(".first-name").html(newPizza.firstName);
+  // $(".last-name").html(newPizza.lastName);
+  // $(".crust").html(newPizza.crust);
 
   $(".crust").html(newPizza.crust);
   $(".size").html(newPizza.size);
