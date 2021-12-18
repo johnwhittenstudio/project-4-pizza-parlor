@@ -70,7 +70,7 @@
 
 #### Alternatively
 
-- _Open a live version of the project in your browser by clicking on https://johnwhittenstudio.github.io/project-4/_
+- _Open a live version of the project in your browser by clicking on https://johnwhittenstudio.github.io/project-4-pizza-parlor/
 
 ## Tests
 
@@ -94,9 +94,9 @@ Expected Output: Pizza { pizzaCrust: "Detroit Style", pizzaSize: "Extra Large", 
 Test passed!
 
 
-Describe: Price()
+Describe: Pizza()
 
-  Calculate Price:
+  Calculate Total:
     • Pizza = $16 flate rate
     • Size: small + $1; medium + $8; large + $16; extra large + $24
     • Toppings: Mozarella + $2; Pepperoni + $2; Green Peppers + $2, Feta + $2, Sun Dried Tomatoes + $2, Roasted Garlic + $2
