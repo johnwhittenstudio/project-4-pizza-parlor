@@ -8,12 +8,12 @@ function Customer(firstName, lastName, phoneNumber) {
 
 // Business Logic for Pizza ---------------------
 
-function Pizza(crust, size, sauce, toppings, total) {
+function Pizza(crust, size, sauce, toppings) {
   this.crust = crust;
   this.size = size;
   this.sauce = sauce;
   this.toppings = toppings;
-  this.total = total;
+  this.total = 0.00;
 }
 
 Pizza.prototype.listToppings = function() {
@@ -33,23 +33,40 @@ Pizza.prototype.calculateTotal = function() {
     total += 24.00;
   } else if (this.size === "Small") {
     total += 16.00;
+  } else {
+    total = 0.00;
   }
 
 this.total = total;
 }
 
 
-function emptyForm(){
-  $("input#first-name").val("");
-  $("input#last-name").val("");
-  $("input#phone-number").val("");
-  $("select#new-crust").val("");
-  $("select#new-size").val("");
-  $("select#new-sauce").val("");
-  $("input[name=selected-topping]").prop("checked", false);
-}
-
 // UI Logic ------------------
+
+// function attachContactListeners(){
+//   $("ul#contacts").on("click", "li", function(){
+//     showContact(this.id);
+//   });
+//   $("#buttons").on("click", ".deleteButton", function() {
+//     addressBook.deleteContact(this.id);
+//     $("#show-contact").hide();
+//     displayContactDetails(addressBook);
+//   });
+// }
+
+
+
+
+
+// function emptyForm(){
+//   $("input#first-name").val("");
+//   $("input#last-name").val("");
+//   $("input#phone-number").val("");
+//   $("select#new-crust").val("");
+//   $("select#new-size").val("");
+//   $("select#new-sauce").val("");
+//   $("input[name=selected-topping]").prop("checked", false);
+// }
 
 $(document).ready(function(){
 
@@ -78,6 +95,10 @@ $(document).ready(function(){
   $(".sauce").html(newPizza.sauce);
   $(".toppings").html(newPizza.listToppings());
   $(".total").html(newPizza.total);
-  emptyForm();
+  // $("form#new-contact").reset();
+  document.getElementById('new-contact').reset();
+  // emptyForm();
+  // event.preventDefault();
+  // location.reload();
   })
 })

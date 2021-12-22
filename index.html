@@ -45,7 +45,6 @@
             <div class="form-group">
               <label for="new-crust"><strong>Crust</strong> (choose one)</label>
                 <select class="form-control" id="new-crust">
-                  <option value="">N/A</option>
                   <option value="Thin">Thin</option>
                   <option value="Detroit Style">Detroit Style</option>
                   <option value="Chicago Style">Chicago Style</option>
@@ -55,8 +54,7 @@
             <div class="form-group">
               <label for="new-size"><strong>Size</strong> (choose one)</label>
                 <select class="form-control" id="new-size">
-                  <option value="">N/A</option>
-                  <option value="Small">Small - 12 in..................$16.00</option>
+                  <option value="Small" selected="selected">Small - 12 in..................$16.00</option>
                   <option value="Medium">Medium - 16 in..............$24.00</option>
                   <option value="Large">Large - 20 in.................$32.00</option>
                   <option value="Extra Large">Extra Large - 24 in........$40.00</option>
@@ -65,7 +63,6 @@
             <div class="form-group">
               <label for="sauce"><strong>Sauce</strong> (choose one)</label>
                 <select class="form-control" id="new-sauce" name="sauce">
-                  <option value="">N/A</option>
                   <option value="Marinara">Marinara</option>
                   <option value="Pesto Basil">Pesto Basil</option>
                   <option value="Garlic Oil & Herbs">Garlic Oil & Herbs</option>
@@ -78,11 +75,11 @@
                   <div class="form-group" id="toppings">
                   <span>
                     <label for="selected-topping" class="checkbox-inline">
-                      <input type="checkbox" value="Vegan Mozarella" name="selected-topping">
+                      <input type="checkbox" value="Mozarella" name="selected-topping" checked>
                       Mozarella 
                     </label>
                     <label for="selected-topping" class="checkbox-inline">
-                      <input type="checkbox" value="Mozarella" name="selected-topping">
+                      <input type="checkbox" value="Vegan Mozarella" name="selected-topping">
                       Vegan Mozarella 
                     </label>
                     <label for="selected-topping" class="checkbox-inline">
