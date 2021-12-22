@@ -43,31 +43,6 @@ this.total = total;
 
 // UI Logic ------------------
 
-// function attachContactListeners(){
-//   $("ul#contacts").on("click", "li", function(){
-//     showContact(this.id);
-//   });
-//   $("#buttons").on("click", ".deleteButton", function() {
-//     addressBook.deleteContact(this.id);
-//     $("#show-contact").hide();
-//     displayContactDetails(addressBook);
-//   });
-// }
-
-
-
-
-
-// function emptyForm(){
-//   $("input#first-name").val("");
-//   $("input#last-name").val("");
-//   $("input#phone-number").val("");
-//   $("select#new-crust").val("");
-//   $("select#new-size").val("");
-//   $("select#new-sauce").val("");
-//   $("input[name=selected-topping]").prop("checked", false);
-// }
-
 $(document).ready(function(){
 
   $("form#new-contact").submit(function(event){
@@ -95,10 +70,6 @@ $(document).ready(function(){
   $(".sauce").html(newPizza.sauce);
   $(".toppings").html(newPizza.listToppings());
   $(".total").html(newPizza.total);
-  // $("form#new-contact").reset();
   document.getElementById('new-contact').reset();
-  // emptyForm();
-  // event.preventDefault();
-  // location.reload();
   })
 })
